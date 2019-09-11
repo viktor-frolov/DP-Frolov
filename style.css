@@ -180,13 +180,14 @@ body {
 	color: #c1c1c1;
 	text-transform: uppercase;
 	line-height: 25px;
+	margin-bottom: 28px;
 }
 .text {
 	font-size: 15px;
 	font-weight: 400;
 	padding-bottom: 55px;
 	margin: 0; 
-	padding-top: 28px;
+	
 }
 .section {
 	padding-left: 7%;
@@ -230,8 +231,64 @@ body {
 } 
 
 
+.be-active, .find-contact, .work-it {
+	display: flex;
+	flex-direction: column;
 
+}
+.active-picture {
+	width: 100%;
+	
+}
+.active-img, .contact-img, .work-img {
+	max-width: 100%
+}
 
+.picture-container {
+	position: relative;
+}
+
+.number-container {
+	width: 70px;
+	height: 70px;
+	background-color: #5e42b0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	left: 20px;
+	bottom: -12px;
+}
+.number{
+	position: relative;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+.number::after { 
+  	content: ""; 
+ 	position: absolute;
+	background-color: #8f7bc8;
+	width: 16px;
+	height: 4px;
+	top: 17px; 
+	left: 0px;
+	border-radius: 2px;
+} 
+.text-container {
+	padding-left: 7%;
+}
+.text-container-heading {
+	font-size: 28px;
+	font-weight: bold;
+	color: #e7e7e7;
+	text-transform: uppercase;
+	position: relative;
+	margin-top: 24px;
+	padding-bottom: 28px;
+	margin-bottom: 0px;
+
+}
 
 
 
