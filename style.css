@@ -30,8 +30,8 @@ body {
 	background-color: #0a0e34;
  	display: flex;
  	box-sizing: border-box;
- 	padding-right: 6.25%;
-	padding-left: 6.25%;
+ 	padding-right: 20px;
+	padding-left: 20px;
 	padding-top: 33px;
 	padding-bottom: 84px;
  }
@@ -151,18 +151,20 @@ body {
 
 
 
-
+.athlets {
+	padding-top: 24px;
+}
 .heading-categories-athlets {
 	font-size: 50px;
 	font-weight: bold;
 	color: #e7e7e7;
 	text-transform: uppercase;
 	position: relative;
-	margin-top: 24px;
+	margin-block-start: 0;
 	margin-bottom: 18px;
 	line-height: 60px;
-	padding-left: 6.25%;
-	padding-right: 6.25%;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 258px;
 }
 .heading-categories-athlets::after {
@@ -189,8 +191,8 @@ body {
 	margin-top: 24px;
 	margin-bottom: 18px;
 	line-height: 60px;
-	padding-left: 6.25%;
-	padding-right: 6.25%;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 230px;
 }
 .heading-categories-players::after {
@@ -206,7 +208,7 @@ body {
   	bottom: 0;
   	width: 302px;
   	height: 248px;
-  	margin-left: 2.8%;
+  	margin-left: 9px;
 }
 .number-01, .number-02, .number-03{
 	position: relative;
@@ -273,8 +275,8 @@ body {
 }
 .section {
 	padding-top: 60px;
-	padding-left: 6.25%;
-	padding-right: 6.25%;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 .section-color-01 {
 	background-color: #fafafa;
@@ -373,14 +375,14 @@ body {
 	align-items: center;
 	justify-content: center;
 	position: absolute;
-	left: 6.25%;
+	left: 20px;
 	bottom: -12px;
 }
 .number{
 	position: relative;
 	font-size: 14px;
 	font-weight: bold;
-	color: #000000;
+	color: #ffffff;
 }
 .number::after { 
   	content: ""; 
@@ -393,7 +395,7 @@ body {
 	border-radius: 2px;
 } 
 .text-container {
-	padding-left: 6.25%;
+	padding-left: 20px;
 }
 .text-container-heading {
 	font-size: 28px;
@@ -452,8 +454,8 @@ body {
 	background-color: #0a0e34;
  	display: flex;
  	box-sizing: border-box;
- 	padding-right: 6.25%;
-	padding-left: 6.25%;
+ 	padding-right: 20px;
+	padding-left: 20px;
 	padding-top: 99px;
 	padding-bottom: 10px;
 
@@ -553,6 +555,7 @@ body {
 	}
 	.header-logo {
 		width: 41px;
+		height: 45px;
 	}
 	.button {
 		width: 310px;
@@ -570,6 +573,154 @@ body {
 	  	margin-left: 27px;
 	}
 
+
+
+
+
+
+
+
+
+
+
+
+	.athlets {
+		padding-top: 84px;
+	}
+	.heading-categories-athlets {
+		font-size: 80px;
+		position: relative;
+		margin-bottom: 60px;
+		padding-left: 292px;
+		padding-right: 33px;
+		padding-bottom: 0px;
+	}
+	.heading-categories-athlets::after {
+		content: ""; 
+		position: absolute;
+		background-image: url("img/footballer_497.png");
+  		top: 92px; 
+  		width: 497px;
+  		height: 699px;
+  		margin-left: -162px;
+	}
+	.heading-categories-players {
+		font-size: 80px;
+		position: relative;
+		margin-bottom: 60px;
+		padding-bottom: 0px;
+		padding-top: 84px;
+	}
+	.heading-categories-players::after {
+		content: ""; 
+		position: absolute;
+		background-image: url("img/basketballer_436.png");
+	  	top: 80px; 
+	  	left: auto; 
+	  	right: 0px; 
+	  	bottom: 0;
+ 	 	background-position: right;
+  		width: 690px;
+  		height: 565px;
+		background-size: contain;
+}
+	.number-01, .number-02, .number-03{
+		position: relative;
+		font-size: 18px;
+	}
+	.number-01::after, .number-02::after { 
+		content: ""; 
+		position: absolute;
+		width: 19px;
+		height: 5px;
+		top: 22px; 
+		border-radius: 2.5px;
+	} 
+	.number-03::after { 
+    	content: ""; 
+    	position: absolute;
+    	width: 19px;
+    	height: 5px;
+    	top: 22px; 
+    	left: 0px;
+    	border-radius: 2.5px;
+} 
+	.heading {
+		margin: 0px 0px 0px 8px;
+		font-size: 32px;
+		font-weight: bold;
+		color: #c1c1c1;
+		text-transform: uppercase;
+		line-height: 25px;
+		margin-bottom: 28px;
+	}
+	.text {
+		font-size: 16px;
+		line-height: 28px;
+		font-weight: 400;
+		padding-bottom: 55px;
+	}
+	.text-18 {
+		font-size: 18px; 
+	}
+	.section {
+		padding-top: 60px;
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+	.section-heading {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		vertical-align: top;
+	}
+	.section-players {
+		padding-top: 60px;
+		padding-left: 32px;
+		padding-right: 292px;
+	}
+
+
+
+
+
+
+
+
+
+
+	.number-container {
+		width: 116px;
+		height: 116px;
+		position: absolute;
+		left: 33px;
+		bottom: -36px;
+	}
+	.number{
+		position: relative;
+		font-size: 24px;
+	}
+	.number::after { 
+	  	content: ""; 
+	 	position: absolute;
+		width: 25px;
+		height: 5px;
+		top: 32px; 
+		left: 0px;
+		border-radius: 2.5px;
+	} 
+	.text-container {
+		padding-left: 32px;
+	}
+	.text-container-heading {
+		font-size: 80px;
+		position: relative;
+		margin-top: 55px;
+		padding-bottom: 38px;
+	}
+	.text-24 {
+		font-size: 24px;
+	}
 
 
 
