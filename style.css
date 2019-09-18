@@ -665,7 +665,7 @@ body {
 	}
 	.section {
 		padding-top: 60px;
-		padding-left: 32px;
+		padding-left: 292px;
 		padding-right: 32px;
 	}
 	.section-heading {
@@ -722,17 +722,251 @@ body {
 		font-size: 24px;
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1025px) {
+	.header {
+		display: flex;
+		justify-content: center;
+		background-image: url("img/football_1920.jpg");
+	 }
+	.header-logo-text {
+		width: 191px;
+	}
+	.header-label {
+		font-size: 90px;
+	}
+	.header-logo {
+		width: 40px;
+		height: 50px;
+	}
+	.button {
+		width: 310px;
+		height: 71px;
+		box-sizing: border-box;
+		display: flex;
+		align-items: center;
+		border-radius: 38.5px;
+	}
+	.button:nth-child(n+2) {
+		margin-left: 31px;
+		margin-top: 0px;
+	}
+	.button_text {
+		font-size: 14px;
+	  	width: 140px;
+	  	margin-left: 27px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+	.athlets {
+		padding-top: 116px;
+	}
+	.heading-categories-athlets {
+		font-size: 80px;
+		position: relative;
+		margin-bottom: 60px;
+		padding-left: 1008px;
+		padding-right: 33px;
+		padding-bottom: 0px;
+	}
+	.heading-categories-athlets::after {
+		content: ""; 
+		position: absolute;
+		background-image: url("img/footballer_566.png");
+  		top: -89px; 
+  		width: 566px;
+  		height: 908px;
+  		margin-left: 392px;
+	}
+	.heading-categories-players {
+		font-size: 80px;
+		position: relative;
+		margin-bottom: 60px;
+		padding-bottom: 0px;
+		padding-top: 84px;
+	}
+	.heading-categories-players::after {
+		content: ""; 
+		position: absolute;
+		background-image: url("img/basketballer_991.png");
+	  	top: -168px; 
+	  	left: auto; 
+	  	right: 125px; 
+	  	bottom: 0;
+ 	 	background-position: right;
+  		width: 815px;
+  		height: 991px;
+		background-size: contain;
+	}
+	.number-01, .number-02, .number-03{
+		position: relative;
+		font-size: 18px;
+
+	}
+	.number-01::after, .number-02::after { 
+		content: ""; 
+		position: absolute;
+		width: 19px;
+		height: 5px;
+		top: 22px; 
+		border-radius: 2.5px;
+	} 
+	.number-03::after { 
+    	content: ""; 
+    	position: absolute;
+    	width: 19px;
+    	height: 5px;
+    	top: 22px; 
+    	left: 0px;
+    	border-radius: 2.5px;
+	} 
+	.heading {
+		margin: 0px 0px 0px 8px;
+		font-size: 36px;
+		font-weight: bold;
+		color: #c1c1c1;
+		text-transform: uppercase;
+		line-height: 25px;
+		margin-bottom: 28px;
+	}
+	.text {
+		font-size: 20px;
+		line-height: 28px;
+		font-weight: 400;
+		padding-bottom: 55px;
+	}
+	.text-18 {
+		font-size: 18px; 
+	}
+	.section {
+		padding-top: 60px;
+		padding-left: 1008px;
+		padding-right: 32px;
+	}
+	.section-heading {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		vertical-align: top;
+	}
+	.section-players {
+		padding-top: 60px;
+		padding-left: 32px;
+		padding-right: 292px;
+	}
+
+
+
+
+
+
+		
+
+	
+	.be-active, .find-contact, .work-it {
+		display: flex;
+		flex-direction: row;
+	}
+	.find-contact {
+		flex-direction: row-reverse;
+	}
+	.contact-picture {
+
+		/*width: 100px;
+		height: 100px;*/
+	}
+	.picture-container {
+		min-width: 50%;
+		max-width: 50%;
+	}
+	.number-container {
+
+		width: 168px;
+		height: 155px;
+		position: absolute;
+		top: calc(50% - 155px/2);
+		right: calc(0% - 155px/2);
+		/*right: -84px;*/
+		left: auto;
+		bottom: auto;
+	}
+	.number-container-desktop {
+		width: 168px;
+		height: 155px;
+		position: absolute;
+		top: calc(50% - 155px/2);
+		right: calc(100% - 155px/2);
+		left: auto;
+		bottom: auto;
+	}
+	.number{
+		position: relative;
+		font-size: 24px;
+	}
+	.number::after { 
+	  	content: ""; 
+	 	position: absolute;
+		width: 25px;
+		height: 5px;
+		top: 32px; 
+		left: 0px;
+		border-radius: 2.5px;
+	} 
+	.text-container {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		padding-left: 122px;
+		padding-top: 90px;
+	}
+	.text-container-desktop {
+		padding-right: 122px;
+	}
+	.text-container-heading {
+		font-size: 80px;
+		position: relative;
+		margin-top: 55px;
+		padding-bottom: 38px;
+	}
+	.text-24 {
+		font-size: 24px;
+	}
+
+}
