@@ -20,40 +20,34 @@ body {
   font-style: normal;
 }
 
+/*.............................header..........................*/
 
 .header {
 	position: relative;
-	background-image: url("img/football_767.jpg");
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-size: cover; 
-	background-color: #0a0e34;
- 	display: flex;
- 	box-sizing: border-box;
+  	background-color: #0a0e34;
+  	box-sizing: border-box;
  	padding-right: 20px;
 	padding-left: 20px;
 	padding-top: 33px;
 	padding-bottom: 84px;
+	
  }
- .header::after {
+ .header::before {
 	content: ""; 
+	background-image: url("img/football_767.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-size: cover; 
  	position: absolute;
- 	background-color: #0a0e34;
   	top: 0; 
   	left: 0; 
   	right: 0; 
   	bottom: 0;
-  	opacity: 0.9;
+  	opacity: 0.1;
  }
-.surface-container {
-	z-index: 1;
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	flex-direction: column;
-}
 .surface {
 	display: flex;
+	justify-content: center;
 }
 .header-logo-text {
 	width: 133px;
@@ -126,32 +120,13 @@ body {
 	font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.............................main-1..........................*/
 
 
 .athlets {
+	padding-top: 24px;
+}
+.players {
 	padding-top: 24px;
 }
 .heading-categories-athlets {
@@ -163,9 +138,9 @@ body {
 	margin-block-start: 0;
 	margin-bottom: 18px;
 	line-height: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 258px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 258px;
 }
 .heading-categories-athlets::after {
 	content: ""; 
@@ -188,12 +163,13 @@ body {
 	color: #e7e7e7;
 	text-transform: uppercase;
 	position: relative;
-	margin-top: 24px;
 	margin-bottom: 18px;
+	padding-top: 0px;
+	margin-top: 0px;
 	line-height: 60px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 230px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 230px;
 }
 .heading-categories-players::after {
 	content: ""; 
@@ -264,7 +240,6 @@ body {
 .text {
 	font-size: 15px;
 	font-weight: 400;
-	padding-bottom: 55px;
 	margin: 0; 
 }
 .section-heading {
@@ -275,6 +250,7 @@ body {
 }
 .section {
 	padding-top: 60px;
+	padding-bottom: 55px;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -294,60 +270,7 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.............................main-2..........................*/
 
 
 .be-active, .find-contact, .work-it {
@@ -396,6 +319,7 @@ body {
 } 
 .text-container {
 	padding-left: 20px;
+	padding-right: 20px;
 }
 .text-container-heading {
 	font-size: 28px;
@@ -409,50 +333,12 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.............................footer..........................*/
 
 
 .footer {
 	position: relative;
-	background-image: url("img/game_767.jpg");
-  	background-repeat: no-repeat;
-  	background-position: center center;
-  	background-size: cover; /*не уверен в этом*/
 	background-color: #0a0e34;
- 	display: flex;
  	box-sizing: border-box;
  	padding-right: 20px;
 	padding-left: 20px;
@@ -462,13 +348,16 @@ body {
  }
  .footer::after {
 	content: ""; 
+	background-image: url("img/game_767.jpg");
+  	background-repeat: no-repeat;
+  	background-position: center center;
+  	background-size: cover;
  	position: absolute;
- 	background-color: #0a0e34;
   	top: 0; 
   	left: 0; 
   	right: 0; 
   	bottom: 0;
-  	opacity: 0.9;
+  	opacity: 0.1;
  }
 
 .surface-icon {
@@ -504,6 +393,7 @@ body {
 }
 .surface-footer {
 	display: flex;
+	justify-content: center;;
 }
 .button-container-footer {
 	display: flex;
@@ -513,39 +403,24 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+.icon-and-title {
+	display: flex;
+	flex-direction: column;
+ 	align-items: center;
+ 	justify-content: center;
+ 	box-sizing: border-box;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*.............................600px..........................*/
 
 
 @media (min-width: 600px) and (max-width: 1024px) {
-	.header {
-		display: flex;
-		justify-content: center;
-		background-image: url("img/football_1280.jpg");
+
+/*............................header.600px..........................*/
+
+
+	 .header::after {
+	 	background-image: url("img/football_1280.jpg");
 	 }
 	.header-logo-text {
 		width: 205px;
@@ -573,31 +448,20 @@ body {
 	  	margin-left: 27px;
 	}
 
-
-
-
-
-
-
-
-
-
-
+/*............................main-1.600px..........................*/
 
 	.athlets {
 		padding-top: 84px;
 	}
 	.heading-categories-athlets {
 		font-size: 80px;
-		position: relative;
+
 		margin-bottom: 60px;
 		padding-left: 292px;
 		padding-right: 33px;
 		padding-bottom: 0px;
 	}
 	.heading-categories-athlets::after {
-		content: ""; 
-		position: absolute;
 		background-image: url("img/footballer_497.png");
   		top: 92px; 
   		width: 497px;
@@ -606,14 +470,11 @@ body {
 	}
 	.heading-categories-players {
 		font-size: 80px;
-		position: relative;
 		margin-bottom: 60px;
 		padding-bottom: 0px;
 		padding-top: 84px;
 	}
 	.heading-categories-players::after {
-		content: ""; 
-		position: absolute;
 		background-image: url("img/basketballer_436.png");
 	  	top: 80px; 
 	  	left: auto; 
@@ -625,20 +486,15 @@ body {
 		background-size: contain;
 }
 	.number-01, .number-02, .number-03{
-		position: relative;
 		font-size: 18px;
 	}
 	.number-01::after, .number-02::after { 
-		content: ""; 
-		position: absolute;
 		width: 19px;
 		height: 5px;
 		top: 22px; 
 		border-radius: 2.5px;
 	} 
 	.number-03::after { 
-    	content: ""; 
-    	position: absolute;
     	width: 19px;
     	height: 5px;
     	top: 22px; 
@@ -646,63 +502,44 @@ body {
     	border-radius: 2.5px;
 } 
 	.heading {
-		margin: 0px 0px 0px 8px;
 		font-size: 32px;
-		font-weight: bold;
-		color: #c1c1c1;
-		text-transform: uppercase;
 		line-height: 25px;
 		margin-bottom: 28px;
 	}
 	.text {
 		font-size: 16px;
 		line-height: 28px;
-		font-weight: 400;
-		padding-bottom: 55px;
 	}
 	.text-18 {
 		font-size: 18px; 
 	}
 	.section {
 		padding-top: 60px;
+		padding-bottom: 55px;
 		padding-left: 292px;
 		padding-right: 32px;
-	}
-	.section-heading {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-		vertical-align: top;
 	}
 	.section-players {
 		padding-top: 60px;
 		padding-left: 32px;
 		padding-right: 292px;
 	}
+	.section-color-01 {
+		background-color: #ffffff;
+	}
 
-
-
-
-
-
-
-
-
+/*............................main-2.600px..........................*/
 
 	.number-container {
 		width: 116px;
 		height: 116px;
-		position: absolute;
 		left: 33px;
 		bottom: -36px;
 	}
 	.number{
-		position: relative;
 		font-size: 24px;
 	}
 	.number::after { 
-	  	content: ""; 
-	 	position: absolute;
 		width: 25px;
 		height: 5px;
 		top: 32px; 
@@ -714,7 +551,7 @@ body {
 	}
 	.text-container-heading {
 		font-size: 80px;
-		position: relative;
+
 		margin-top: 55px;
 		padding-bottom: 38px;
 	}
@@ -722,37 +559,50 @@ body {
 		font-size: 24px;
 	}
 
+/*............................footer.600px..........................*/
+
+	.footer {
+ 		align-items: center;
+ 		justify-content: center;
+		padding-bottom: 24px;
+	}
+ 	.footer::after {
+		background-image: url("img/game_1280.jpg");
+ 	}
+	.surface-icon {
+		width: 130px;
+		padding: 25px;
+		border-radius: 31px;
+	}
+	.title-footer {
+		margin-top: 0px;
+		margin-left: 31px;
+		align-items: center;
+		padding-top: 83px;
+	}
+	.title-footer-1{
+		font-size: 80px;
+    	line-height: 40px;
+    	padding-bottom: 22px;
+	}
+	.title-footer-2 {
+		font-size: 36px;
+    	color: #a496ca;
+	}
+	.button-container-footer {
+		margin-top: 288px;
+		margin-bottom: 55px;
+	}
 }
+/* в 1000 навел порядок и удалил лишнее*/
+/*............................1000px..........................*/
+
+@media (min-width: 1000px) {
+
+/*............................header.1000px..........................*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1025px) {
-	.header {
-		display: flex;
-		justify-content: center;
+	 .header::after {
 		background-image: url("img/football_1920.jpg");
 	 }
 	.header-logo-text {
@@ -769,8 +619,6 @@ body {
 		width: 310px;
 		height: 71px;
 		box-sizing: border-box;
-		display: flex;
-		align-items: center;
 		border-radius: 38.5px;
 	}
 	.button:nth-child(n+2) {
@@ -783,47 +631,33 @@ body {
 	  	margin-left: 27px;
 	}
 
-
-
-
-
-
-
-
-
-
-
+/*.....................main-1.1000px......................*/
 
 	.athlets {
 		padding-top: 116px;
 	}
 	.heading-categories-athlets {
 		font-size: 80px;
-		position: relative;
 		margin-bottom: 60px;
-		padding-left: 1008px;
+		/*padding-left: 1008px;*/
+		padding-left: 52.5%;
 		padding-right: 33px;
 		padding-bottom: 0px;
 	}
 	.heading-categories-athlets::after {
-		content: ""; 
-		position: absolute;
 		background-image: url("img/footballer_566.png");
   		top: -89px; 
   		width: 566px;
   		height: 908px;
-  		margin-left: 392px;
+  		margin-left: 20.4%;
 	}
 	.heading-categories-players {
 		font-size: 80px;
-		position: relative;
 		margin-bottom: 60px;
 		padding-bottom: 0px;
 		padding-top: 84px;
 	}
 	.heading-categories-players::after {
-		content: ""; 
-		position: absolute;
 		background-image: url("img/basketballer_991.png");
 	  	top: -168px; 
 	  	left: auto; 
@@ -835,21 +669,15 @@ body {
 		background-size: contain;
 	}
 	.number-01, .number-02, .number-03{
-		position: relative;
 		font-size: 18px;
-
 	}
 	.number-01::after, .number-02::after { 
-		content: ""; 
-		position: absolute;
 		width: 19px;
 		height: 5px;
 		top: 22px; 
 		border-radius: 2.5px;
 	} 
 	.number-03::after { 
-    	content: ""; 
-    	position: absolute;
     	width: 19px;
     	height: 5px;
     	top: 22px; 
@@ -857,66 +685,40 @@ body {
     	border-radius: 2.5px;
 	} 
 	.heading {
-		margin: 0px 0px 0px 8px;
 		font-size: 36px;
-		font-weight: bold;
-		color: #c1c1c1;
-		text-transform: uppercase;
-		line-height: 25px;
-		margin-bottom: 28px;
 	}
 	.text {
 		font-size: 20px;
 		line-height: 28px;
-		font-weight: 400;
-		padding-bottom: 55px;
 	}
 	.text-18 {
 		font-size: 18px; 
 	}
 	.section {
 		padding-top: 60px;
-		padding-left: 1008px;
+		/*padding-left: 1008px;*/
+		padding-left: 52.5%;
 		padding-right: 32px;
-	}
-	.section-heading {
-		display: flex;
-		align-items: flex-start;
-		justify-content: flex-start;
-		vertical-align: top;
 	}
 	.section-players {
 		padding-top: 60px;
 		padding-left: 32px;
 		padding-right: 292px;
 	}
-
-
-
-
-
-
 		
-
+/*............................main-2.1000px..........................*/
 	
 	.be-active, .find-contact, .work-it {
-		display: flex;
 		flex-direction: row;
 	}
 	.find-contact {
 		flex-direction: row-reverse;
-	}
-	.contact-picture {
-
-		/*width: 100px;
-		height: 100px;*/
 	}
 	.picture-container {
 		min-width: 50%;
 		max-width: 50%;
 	}
 	.number-container {
-
 		width: 168px;
 		height: 155px;
 		position: absolute;
@@ -936,12 +738,9 @@ body {
 		bottom: auto;
 	}
 	.number{
-		position: relative;
 		font-size: 24px;
 	}
 	.number::after { 
-	  	content: ""; 
-	 	position: absolute;
 		width: 25px;
 		height: 5px;
 		top: 32px; 
@@ -961,7 +760,6 @@ body {
 	}
 	.text-container-heading {
 		font-size: 80px;
-		position: relative;
 		margin-top: 55px;
 		padding-bottom: 38px;
 	}
@@ -969,4 +767,41 @@ body {
 		font-size: 24px;
 	}
 
+/*............................footer.1000px..........................*/
+
+	.footer {
+ 		align-items: center;
+ 		justify-content: center;
+		padding-bottom: 52px;
+	}
+ 	.footer::after {
+				background-image: url("img/game_1920.jpg");
+ 	}
+	.icon-and-title {
+		flex-direction: row;
+	}
+	.surface-icon {
+		width: 130px;
+		padding: 25px;
+		border-radius: 31px;
+	}
+	.title-footer {
+		margin-top: 0px;
+		margin-left: 31px;
+		align-items: flex-start;
+		padding-top: 22px;
+	}
+	.title-footer-1{
+		font-size: 80px;
+    	line-height: 40px;
+    	padding-bottom: 22px;
+	}
+	.title-footer-2 {
+		font-size: 30px;
+    	color: #a496ca;
+	}
+	.button-container-footer {
+		margin-top: 151px;
+		margin-bottom: 262px;
+	}
 }
