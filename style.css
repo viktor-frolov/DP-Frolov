@@ -186,7 +186,7 @@ body {
   	height: 248px;
 }
 .number-01, .number-02, .number-03{
-	position: relative;
+	position: absolute;
 	font-size: 14px;
 	font-weight: bold;
 	color: #000000;
@@ -233,6 +233,9 @@ body {
 	padding-left: 20px;
 	padding-right: 20px;
 	margin-block-end: 0;
+	max-width: 1920px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -243,29 +246,51 @@ body {
 	color: #c1c1c1;
 	text-transform: uppercase;
 	line-height: 17px;
-	padding-bottom: 22px;
+
+
+
+	position: absolute;
+	top: 0;
+	padding-left: 20px;
 }
-.text {
-	font-size: 15px;
-	font-weight: 400;
-	margin: 0; 
-	max-width: 715px;
-	letter-spacing: 0.8px;
-	line-height: 19px;
-}
-.section-heading-athlets, .section-heading-players {
+
+
+/*.section-heading-athlets, .section-heading-players {
 	display: flex;
 	align-items: flex-start;
 	justify-content: flex-start;
 	vertical-align: top;
+}*/
+
+
+.section-heading-athlets, .section-heading-players {
+	position: relative;
+	
+	
 }
 
 .section-athlets, .section-players {
-	padding-top: 60px;
-	padding-bottom: 50px;
+	padding-top: 58px;
+	padding-bottom: 40px;
 }
+.text {
+	padding-top: 24px;
+	line-height: 18px;
+	letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
 .section-color-01 {
-	padding-top: 80px;
+	padding-top: 20px;
 	background-color: #fafafa;
 	
 }
@@ -289,9 +314,9 @@ body {
 .be-active, .find-contact, .work-it {
 	display: flex;
 	flex-direction: column;
-	/*max-width: 1530px;
+	max-width: 1920px;
 	margin-right: auto;
-	margin-left: auto;*/
+	margin-left: auto;
 }
 .img {
 	display: block;
@@ -668,7 +693,7 @@ body {
 
 /*............................1920px..........................*/
 
-@media (min-width: 1201px) and (max-width: 1920px) {
+@media (min-width: 1201px)/* and (max-width: 1920px)*/ {
 
 /*............................header.1000px..........................*/
 
@@ -735,9 +760,10 @@ body {
 		background-image: url("img/footballer_566.png");
   		top: -96px; 
   		width: 29.58vw;
-  		/*width: 568px;
-  		height: 908px;*/
   		height: 47.3vw;
+  		max-width: 568px;
+  		max-height: 908px;
+  		
   		/*margin-right: 51%;*/
   		/*transform: translate(-35%);*/
   		margin-left: 20%;
@@ -790,11 +816,11 @@ body {
 		padding-bottom: 66px;
 	}
 	.section-players-02 {
-		padding-bottom: 96px;
-		padding-top: 62px;
+		/*padding-bottom: 96px;
+		padding-top: 62px;*/
 	}
 	.section-players-03 {
-		padding-bottom: 56px;
+		/*padding-bottom: 56px;*/
 	}
 	.heading-categories-players {
 		font-size: 80px;
@@ -815,8 +841,8 @@ body {
  	 	background-position: right;
  	 	/*margin-left: 41.9%;*/
  	 	width: 51.6vw;
-  		/*width: 991px;*/
-  		/*height: 815px;*/
+  		max-width: 991px;
+  		max-height: 815px;
   		height: 42.4vw;
 		background-size: contain;
 		margin: 0;
@@ -1044,13 +1070,26 @@ body {
   		/*transform: translate(-35%);*/
   		margin-left: 20%;
 	}
+	.section {
+		padding-top: 60px;
+		padding-left: 52.5%;
+		padding-right: 10.42%;
+	}
+	.section-players {
+		padding-top: 60px;
+		padding-left: 10%;
+		padding-right: 51.2%;
+	}
 	.heading-categories-players {
 		font-size: 80px;
 		margin-bottom: 60px;
 		padding-bottom: 0px;
-		padding-top: 84px;
+		
 		padding-left: 10%;
 		margin-left: 0;
+		padding-top: 60px;
+		padding-left: 10%;
+		padding-right: 51.2%;
 	}
 	.heading-categories-players::after {
 		background-image: url("img/basketballer_991.png");
@@ -1093,16 +1132,7 @@ body {
 	.text-18 {
 		font-size: 18px; 
 	}
-	.section {
-		padding-top: 60px;
-		padding-left: 52.5%;
-		padding-right: 10.42%;
-	}
-	.section-players {
-		padding-top: 60px;
-		padding-left: 10%;
-		padding-right: 51.2%;
-	}
+
 
 
 /*............................main-2.600px..........................*/
@@ -1192,48 +1222,3 @@ body {
 
 
 
-@media (min-width: 1921px) {
-	/*.heading-categories-athlets::after {
-		background-image: url("img/footballer_566.png");
-  		top: -89px; 
-  		width: 568px;
-  		height: 908px;
-  		margin-left: 20%;
-	}
-
-
-	.heading-categories-players {
-		margin-bottom: 60px;
-		padding-bottom: 0px;
-		padding-top: 84px;
-		padding-left: 10%;
-		margin-left: 0;
-
-	}
-
-
-	.heading-categories-players::after {
-		background-image: url("img/basketballer_991.png");
-	  	top: 0; 
-	  	left: 630px; 
-	  	right: 0;
-	  	bottom: 0;
- 	 	background-position: right;
-
-
-  		width: 991px;
-  		height: 815px;
-		background-size: contain;
-	}
-	.section-players {
-		/*padding-left: 9.6%;
-		max-width: 1530px;*/
-	}
-	/*.players {
-		max-width: 1530px;
-		padding-right: auto;
-		padding-left: auto;
-		margin: 0; 
-	}*/
-
-}
