@@ -676,7 +676,7 @@ body {
 
 /*............................1920px..........................*/
 
-@media (min-width: 1201px)/* and (max-width: 1920px)*/ {
+@media (min-width: 1201px) {
 
 /*............................header.1000px..........................*/
 
@@ -747,17 +747,19 @@ body {
   		max-width: 568px;
   		max-height: 908px;
   		
-  		/*margin-right: 51%;*/
+  		margin-right: 50.2%;
   		/*transform: translate(-35%);*/
-  		margin-left: 20%;
+  		/*margin-left: 20%;*/
+  		margin-left: auto;
 	}
 	.number-01, .number-02, .number-03, .number-03-players{
 		font-size: 18px;
+		line-height: 10px;
 	}
 	.number-01::after, .number-02::after { 
-		width: 19px;
+		width: 20px;
 		height: 5px;
-		top: 22px; 
+		top: 18px; 
 		border-radius: 2.5px;
 	} 
 	.number-03::after { 
@@ -785,10 +787,12 @@ body {
 	.text-18 {
 		font-size: 18px; 
 	}
+	.text-1 {
+		padding-top: 34px;
+	}
 	.section {
 		padding-left: 52.5%;
 		padding-right: 10.42%;
-
 	}
 	.section-color-01 {
 		padding-top: 10px;
@@ -805,10 +809,11 @@ body {
 		box-sizing: border-box;
 	}
 	.section-players-02 {
-		
+		padding-top: 58px;
+		padding-bottom: 60px;
 	}
 	.section-players-03 {
-		/*padding-bottom: 56px;*/
+		padding-top: 68px;
 	}
 	.heading-categories-players {
 		font-size: 80px;
@@ -863,23 +868,17 @@ body {
 		width: 168px;
 		height: 155px;
 		position: absolute;
-		top: calc(50% - 155px/2 - 75px);
-		right: calc(0% - 155px/2);
-		/*right: -84px;*/
+		top: calc(50% - 160px/2 - 75px);
+		right: calc(0% - 170px/2);
 		left: auto;
 		bottom: auto;
 	}
 	.number-container-desktop {
-		width: 168px;
-		height: 155px;
-		position: absolute;
-		top: calc(50% - 155px/2 - 75px);
-		right: calc(100% - 155px/2);
-		left: auto;
-		bottom: auto;
+		right: calc(100% - 170px/2);
 	}
 	.number{
 		font-size: 24px;
+		margin-bottom: 16px;
 	}
 	.number::after { 
 		width: 25px;
@@ -924,31 +923,39 @@ body {
  	}
 	.icon-and-title {
 		flex-direction: row;
+		padding-left: 10px;
 	}
 	.surface-icon {
 		width: 130px;
+		height: 137px;
 		padding: 20px;
 		border-radius: 31px;
-		margin-right: 20px;
+		
+	}
+	.surface-logo {
+		width: 100px;
 	}
 	.title-footer {
 		margin-top: 0px;
 		align-items: flex-start;
 		padding-top: 22px;
+		padding-left: 30px;
+
 	}
 	.title-footer-1{
 		font-size: 80px;
     	line-height: 40px;
     	padding-bottom: 22px;
-    	letter-spacing: 6px;
+    	letter-spacing: 4px;
+
 	}
 	.title-footer-2 {
 		font-size: 30px;
     	color: #a496ca;
-    	letter-spacing: 1px;
+    	letter-spacing: 0.2px;
 	}
 	.button-container-footer {
-		margin-top: 160px;
+		margin-top: 150px;
 		margin-bottom: 262px;
 	}
 }
@@ -1002,6 +1009,17 @@ body {
 	}
 	.button-container-footer {
 		display: block;
+	}
+
+
+
+
+/*............................main-2.600px..........................*/
+
+
+	.text-24 {
+		font-size: 18px;
+		max-width: 1000px;
 	}
 }
 
@@ -1161,6 +1179,7 @@ body {
 	}
 	.text-24 {
 		font-size: 24px;
+		max-width: 1000px;
 	}
 	.picture-container {
 		display: flex;
@@ -1216,6 +1235,19 @@ body {
 
 }
 
+@media (min-width: 1200px) and (max-width: 1900px) {
+	.text-container-heading {
+		padding-top: 30%;
+		padding-bottom: 30px;
+		line-height: 60px;
+	}
+	.picture-container {
+		height: 38vw;
+	}
+	.text-main-2 {
+		padding-right: 20px;
+	}
+}
 
 
 
