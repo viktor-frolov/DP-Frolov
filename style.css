@@ -128,10 +128,10 @@ body {
 
 
 .athlets {
-	padding-top: 24px;
+	padding-top: 12px;
 }
 .players {
-	padding-top: 24px;
+	padding-top: 10px;
 }
 .heading-categories-athlets {
 	font-size: 50px;
@@ -140,9 +140,9 @@ body {
 	text-transform: uppercase;
 	position: relative;
 	margin-block-start: 0;
-	line-height: 35px;
+	line-height: 60px;
 	/*margin-right: 20px;*/
-	padding-bottom: 250px;
+	padding-bottom: 238px;
 }
 .heading-categories-athlets::after {
 	content: ""; 
@@ -151,7 +151,7 @@ body {
 	background-repeat: no-repeat;
   	background-position: center;
   	background-size: cover;
-  	top: 55px; 
+  	top: 67px; 
   	left: 0; 
   	right: 0; 
   	bottom: 0;
@@ -167,8 +167,8 @@ body {
 	position: relative;
 	padding-top: 0px;
 	margin-top: 0px;
-	line-height: 35px;
-	padding-bottom: 250px;
+	line-height: 60px;
+	padding-bottom: 238px;
 	width: 100%;
 	box-sizing: border-box;
 }
@@ -178,7 +178,7 @@ body {
 	background-image: url("img/basketballer_302.png");
 	background-repeat: no-repeat;
   	background-size: cover;
-  	top: 59px; 
+  	top: 70px; 
   	left: 2.5%; 
   	right: 2.5%;
   	bottom: 0;
@@ -251,6 +251,9 @@ body {
 	padding-top: 58px;
 	padding-bottom: 40px;
 }
+.sections:nth-child(2) {
+	padding-top: 20px;
+}
 .text {
 	padding-top: 24px;
 	line-height: 18px;
@@ -261,7 +264,7 @@ body {
 	letter-spacing: 0.3px;
 }
 .section-color-01 {
-	padding-top: 20px;
+	
 	background-color: #fafafa;
 }
 .section-color-02 {
@@ -492,16 +495,16 @@ body {
 /*............................main-1.600px..........................*/
 
 	.athlets {
-		padding-top: 86px;
+		padding-top: 83px;
 	}
 	.players {
-		padding-top: 90px;
+		padding-top: 87px;
 	}
 	.heading-categories-athlets {
 		font-size: 80px;
-		line-height: 54px;
-		/*padding-bottom: 70px;*/
-		padding-bottom: 28px;
+		line-height: 60px;
+
+		padding-bottom: 26px;
 		margin-bottom: 0px;
 		padding-left: 292px;
 		padding-right: 32px;
@@ -515,9 +518,9 @@ body {
 	}
 	.heading-categories-players {
 		font-size: 80px;
-		padding-bottom: 28px;
+		padding-bottom: 26px;
 		padding-left: 30px;
-		line-height: 54px;
+		line-height: 60px;
 		margin-bottom: 0px;
 	}
 	.heading-categories-players::after {
@@ -590,14 +593,17 @@ body {
 		padding-right: 340px;
 		padding-bottom: 14px;
 	}
-	.section-players-02 {
+	/*.section-players-02 {
 		padding-bottom: 14px;
 		padding-top: 6px;
-	}
+	}*/
 	.section-color-01 {
 		background-color: #ffffff;
 		padding-top: 0px;
 	}
+	.sections:nth-child(2) {
+	padding-top: 0px;
+}
 
 /*............................main-2.600px..........................*/
 
@@ -730,18 +736,18 @@ body {
 /*.....................main-1.1000px......................*/
 
 	.athlets {
-		padding-top: 126px;
+		padding-top: 116px;
 	}
 	.heading-categories-athlets {
 		font-size: 80px;
 		
 		padding-left: 52.5%;
 		padding-right: 33px;
-		padding-bottom: 60px;
+		padding-bottom: 57px;
 	}
 	.heading-categories-athlets::after {
 		background-image: url("img/footballer_566.png");
-  		top: -96px; 
+  		top: -90px; 
   		width: 29.58vw;
   		height: 47.3vw;
   		max-width: 568px;
@@ -839,6 +845,9 @@ body {
   		height: 42.4vw;
 		background-size: contain;
 		margin: 0;
+	}
+	.sections:nth-child(2) {
+		padding-top: 0px;
 	}
 
 		
@@ -1153,6 +1162,10 @@ body {
 	.section-color-01 {
 		background-color: #ffffff;
 	}
+	.sections:nth-child(2) {
+		padding-top: 0px;
+	}
+
 
 
 
