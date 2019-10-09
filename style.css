@@ -1106,6 +1106,9 @@ body {
 		padding-left: 10%;
 		padding-right: 51.2%;
 	}
+	.heading-athlets, .heading-players {
+		font-size: 30px;
+	}
 	.heading-categories-players::after {
 		background-image: url("img/basketballer_991.png");
 	  	top: 0; 
@@ -1146,6 +1149,9 @@ body {
 	}
 	.text-18 {
 		font-size: 18px; 
+	}
+	.section-color-01 {
+		background-color: #ffffff;
 	}
 
 
